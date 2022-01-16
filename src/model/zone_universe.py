@@ -35,7 +35,7 @@ class zone_universe:
             zone(14, 1, "Neutral", [11,12,15]),
             zone(15, 50, "Southern Empire", [13,14])    
             ]
+        print(self.zones)
 
-universe = zone_universe(9,"diamond",2)     
-universe.build_zones()
+
    

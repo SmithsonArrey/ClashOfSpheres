@@ -1,7 +1,11 @@
 import pygame
+import cos_src_definitions as cos_lib
 from sys import exit
 #starts pygame
 pygame.init()
+
+universe = cos_lib.zone_universe.zone_universe(9,"diamond",2)     
+universe.build_zones()
 
 #displaysurface
 screen = pygame.display.set_mode((800,400))
@@ -28,11 +32,15 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit() #opposite of pygame.init
             exit() #stops all code
+    
     #draw elements 
+
     screen.blit(test_surface, (0,0))#block image transfer/overlaps surfaces
     screen.blit(ground, (0,0))#block image transfer/overlaps surfaces
     screen.blit(text_surface,(300,50))
     screen.blit(sphere_surface, sphere_rect)
+
     #update everything
+
     pygame.display.update() #allows display surface to keep playing
     clock.tick(60)#frame rate cap
