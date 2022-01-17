@@ -1,5 +1,3 @@
-import numpy as np
-
 class zone:
     def __init__(self, location, troops, team, adj_z):
         self.location = location #0
