@@ -1,9 +1,4 @@
-class zone:
-    def __init__(self, location, troops, team, adj_z):
-        self.location = location #0
-        self.troops = troops #1
-        self.team = team #neutral
-        self.adj_z = adj_z #1 2 3
+import pygame
 
 class zone_universe:
     def __init__(self, locations, pattern, teams):
@@ -33,7 +28,9 @@ class zone_universe:
             zone(14, 1, "Neutral", [11,12,15]),
             zone(15, 50, "Southern Empire", [13,14])    
             ]
-        print(self.zones)
+            
+
+        print("Successful Universe Build")
 
 
    
